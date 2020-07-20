@@ -1,0 +1,189 @@
+/* estrutura do site */
+body{
+    background: #f4f2ec url(./imagem/fundo.png)repeat-x;
+    font: 12px "Lucida Grande" , "Lucida Sans Unicode" , Arial , sans-serif;
+
+}
+
+#container{
+    width: 1080px;
+    margin: 0 auto; /* para cerntralizar o conteudo do container em relacao ao body*/
+}
+
+/* logo */
+
+#logo h1{
+    float: left;
+}
+
+#logo a{ /* usando imagem como link do logo*/
+    width: 248px;
+    height: 21px;
+    text-indent: -9999px; /* para naop aparecer na tela , mas aparece para leitores de tela(acessibilidade)*/
+    display: block; /* para alinhar a logo*/
+    background: url(./imagem/logo.png);
+
+}
+
+a:link , a:active , a:visited{
+    color: #af670a;
+    text-decoration: none; /* para tirar a borda inferior do link*/
+}
+a:hover{
+    color:#227215;
+}
+
+/* barra navegacao*/
+
+header{
+    padding: 15px 0 ;
+    height: 55px;
+}
+
+nav ul{/* formatacao geral*/
+    list-style:none;
+    float: right;
+    margin: 20px;
+}
+
+nav ul li { /* formatacao geral*/
+    float: left;
+}
+
+nav ul li a:link{ /* formatando cada link*/
+    display: block;
+    margin-right: 25px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{ /* efeito de borda em baixo do link. */
+    border-bottom: 1px solid #535858;
+}
+
+/* principal*/
+#conteudo{
+    width: 710px;
+    float: left;
+    margin-bottom: 20px; /* para aplicar margim e resolver o problema de margin colapse*/
+}
+
+aside{ /* editando a tag html*/
+    width: 350px;
+    float: right;
+    background: #ede7ed;
+    padding-bottom: 30px;
+    margin-bottom: 20px;/* para aplicar margim e resolver o problema de margin colapse*/
+}
+
+section#visita{/* editando o id que esta na sessao visita*/
+    margin-top: 10px;
+    padding: 10px 27px 27px 27px;
+    background: #dfdcd3;
+}
+section#galeria{ /* editando o id que esta na sessao galeria*/
+    padding: 0 27px 0 27px;
+    margin-top: 10px;
+}
+
+section#galeria a{ /* estamos acessaando o link desse id galeria*/
+    display: block;
+    background: url(./imagem/fundo-foto.png) no-repeat;
+    float: left;
+    padding: 17px 15px 17px 15px;
+    margin: 10px 0 0 20px;
+}
+
+article#video{
+    float: left;
+    width: 310px;
+    margin-left: 25px;
+}
+
+article#mapa{
+    float: left;
+    width: 310px;
+    margin-left: 37px;
+}
+
+article#exposicoes{
+    float: left;
+    width: 310px;
+    margin: 15px 0 0 25px;
+    
+}
+
+article#historia{
+    float: left;
+    width: 310px;
+    margin: 15px 0 0 37px;
+    
+}
+
+section#galeria img{ /* acessando a imagem que esta no id galeria*/
+    margin-left: 2px;
+    margin-top:3px ;
+}
+
+h4{
+    color: #86521a;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin: 0;
+}
+
+h3{
+    color: #227115;
+    font-size:1.2em ;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* formularios */
+
+input{
+    width: 80px;
+    height: 20px;
+    border: none;
+    background: #fff;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+input.campo{ /* editando a classe que esta no elemento html*/
+    border: 1px solid #ada484;
+}
+
+input.botao{
+    background:#9b9271;
+    color: #fff;
+    width: 100%; /* largura total em relacao a sua div*/
+    height: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+fieldset{
+    border: none;
+}
+
+/* rodape*/
+
+footer{
+    padding:20px 0 30px 0;
+    text-align: center;
+    background: url(./imagem/fundo-rodape.png) no-repeat top;
+}
+
+footer>p a{ /* acessando o link filho de p que esta no footer*/
+    padding: 2px 10px;
+}
+
+
+
+
+
+
+
+
